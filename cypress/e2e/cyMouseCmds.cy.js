@@ -24,7 +24,7 @@ context('Tests using Cypress mouse commands', () => {
     cy.get('.rightclick-action-input-hidden').should('be.visible')
   })
 
-  it.only('shows the nav links on hover', () => {
+  it('shows the nav links on hover', () => {
     cy.get('.dropdown-toggle').trigger('mouseover')
     cy.get('.dropdown-menu').should('be.visible')
   })

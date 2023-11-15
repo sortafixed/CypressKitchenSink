@@ -17,7 +17,7 @@ context("Tests using UI Commands", () => {
         .clear().should("have.value", "")
   })
 
-  it.only("lets you check a checkbox", () => {
+  it("lets you check a checkbox", () => {
     cy.visit("/commands/actions")
     cy.get('.action-checkboxes [type="checkbox"]').eq(1).check({force: true}).should('be.checked')
   })
