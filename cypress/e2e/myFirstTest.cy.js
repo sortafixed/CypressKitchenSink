@@ -8,9 +8,9 @@ context("My First Test", () => {
     cy.get("h1").should("exist");
   })
 
-  // it("renders the correct h1 text", () => {
-  //     cy.get("h1").should("contain.text", "Actions");
-  // })
+  it("renders the correct h1 text", () => {
+      cy.get("h1").should("contain.text", "Actions");
+  })
 
   // it("renders a paragraph under the h1", () => {
   //     cy.get(".container")
